@@ -1,0 +1,35 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+.accordion_item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .accordion_title {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .accordion_content {
+    display: none; /* Hidden by default */
+    padding: 10px;
+  }
+  
+  .accordion_item.active .accordion_content {
+    display: block; /* Show when active */
+  }
+  
+  .accordion_item.active .accordion_title i {
+    transform: rotate(180deg); /* Rotate the icon when active */
+  }
+  
